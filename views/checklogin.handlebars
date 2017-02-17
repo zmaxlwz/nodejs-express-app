@@ -1,0 +1,85 @@
+<div class="container">
+    
+      <div class="row">
+        <div class="col-md-11 text-center">
+          <h2 class="">Explore By Example:</h2>
+          <h4>An Automatic User Navigation System for Interactive Data Exploration</h4>
+        </div>
+        <form class="col-md-1 large-top-margin" action="/" method="post">
+
+          
+          <label>{{myusername}}</label>
+          
+
+          <button type="submit" class="btn btn-default">Logout</button>
+        </form>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav>
+            <ul class="pager">
+              <li class="previous"><a href="connect.php"><span aria-hidden="true">&larr;</span> Go Back</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="panel panel-default">
+
+            <div class="panel-heading">
+              <h4 class="panel-title">Select A Table</h4>
+            </div>
+
+            <div class="panel-body">
+
+              <form class="form-horizontal small-southeast-align" role="form" name="form2" method="post" action="/attribute_select">
+
+                <div class="form-group">
+                  <label for="inputTable" class="col-md-2 control-label">Table</label>
+                  <div class="col-md-6">
+                    <select name="table_select" class="form-control" id="inputTable">
+                      <option>{{getTable}}</option>
+
+                    </select>
+                  </div>
+          <div class="col-md-4">
+            <p class="form-control-static"><mark id="tableSize">781 MB</mark></p>
+            </div>    
+                </div>
+
+                <div class="form-group">
+                  <div class="col-md-offset-2 col-md-4">
+                    <button type="submit" class="btn btn-default">Select</button>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <hr>
+        </div>
+      </div>
+
+
+</div>
+
+<!-- output table size function -->
+<script src="js/table_info.js"></script>
+  

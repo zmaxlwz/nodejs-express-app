@@ -1,0 +1,15 @@
+
+
+I use node.js and express as backend server to implement a web application to display database table attributes and allow users to select their interested attributes to further explore.
+
+How to run:
+
+1. first install npm dependency packages:
+npm install
+
+2. run the backend server:
+node server.js
+
+3. open the web browser and enter the URL:
+localhost:8000
+

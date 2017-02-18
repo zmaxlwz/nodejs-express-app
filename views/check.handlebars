@@ -2,3 +2,15 @@
 <h1>{{message}}</h1>
 
 {{getTable}}
+
+{{#if hasPeople}}
+<h1>has people</h1>
+{{else if hasOnePeople}}
+<h1>has one people</h1>
+{{else}}
+<h1>no people</h1>
+{{/if}}
+
+{{#each objectArray}}
+	<p>{{this.price}}, {{this.weight}}</p>
+{{/each}}
